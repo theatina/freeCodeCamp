@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tina's Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Tina's Survey Form</h1>
+    <p id="description">Thank you for taking the time to participate in our survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name-label" type="text" placeholder="Name" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email-label" type="email" placeholder="Email" required /></label>
+        <label id="number-label" for="number">Number: <input id="number" name="number-label" type="number" min="2" max="100" placeholder="Number" required /></label>
+      </fieldset>
+      <fieldset>
+      <label for="referrer">Choose your poison
+          <select id="dropdown" name="poison">
+            <option value="">Choose one</option>
+            <option value="alcohol">Alcohol</option>
+            <option value="smoking">Smoking</option>
+            <option value="procrastinating">Procrastinating</option>
+            <option value="anxiety">Anxiety</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <h4> I feel . . . </h4>
+              <label> <input type="radio" value="good" name="feel" class="inline"> Good </label>
+              <label> <input type="radio" value="bad" name="feel"  class="inline"> Bad </label>
+        <h4> I am a . . . </h4>
+              <label> <input type="radio" value="man" name="sex" class="inline"> Man </label>
+              <label> <input type="radio" value="woman" name="sex"  class="inline"> Woman </label>
+            
+        </fieldset>  
+        <fieldset>
+          <label> Additional Comments: <textarea> </textarea> </label>
+          <label> <input type="checkbox" value="done" class="inline"> Me done!
+          <label> <input type="checkbox" value="ready" class="inline"> Me ready to rock!
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
